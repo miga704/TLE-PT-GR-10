@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scholastic Layout</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Calibri, sans-serif;
+      background: 
+        linear-gradient(rgba(139, 0, 0, 0.5), rgba(139, 0, 0, 0.5)), 
+        url('yum.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 90%;
+    }
+
+    .title {
+      font-size: 10rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    .instruction {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 4rem;
+      letter-spacing: 2px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    .box, .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 350px;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    .box {
+      border-radius: 20px;
+    }
+
+    .circle {
+      border-radius: 50%;
+    }
+
+    .x {
+      font-size: 8rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    img {
+      width: 90%;
+      height: auto;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+    }
+
+    footer strong {
+      font-size: 1.8rem;
+    }
+
+    /* Scholastic Collage Page Style */
+    .collage-container {
+      width: 95%;
+      height: 95%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .collage-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 2rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: black;
+      text-decoration: none;
+    }
+
+    .back-button:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* Clifford Logo in lower-right corner */
+    .clifford-logo {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 360px;
+      height: auto;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Main Page Content -->
+  <div class="container">
+    <h1 class="title">SCHOLASTIC</h1>
+    <!-- Instructional Text -->
+    <p class="instruction">CLICK THE LOGOS FOR MORE!</p>
+    <div class="content">
+      <!-- Left box redirects to Scholastic Collage Page -->
+      <a href="scholastic collage (1).png">
+        <div class="box">
+          <img src="scho.png" alt="Scholastic Logo">
+        </div>
+      </a>
+      <div class="x">X</div>
+      <!-- Right circle redirects to ACC Collage Page -->
+      <a href="accLL.png">
+        <div class="circle">
+          <img src="acc_logo.png-removebg-preview.png" alt="Asian Computer College Logo">
+        </div>
+      </a>
+    </div>
+    <footer>
+      <p>Website by: <strong>Dane Wilner I. Pineda</strong></p>
+      <p>Asian Computer College</p>
+    </footer>
+  </div>
+
+  <!-- Clifford Logo -->
+  <a href="https://www.scholasticlearningzone.com/" target="_blank">
+    <img src="clifford-the-big-red-dog-2-removebg-preview.png" alt="Clifford Logo" class="clifford-logo">
+  </a>
+</body>
+</html>
